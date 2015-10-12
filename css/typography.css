@@ -1,23 +1,9 @@
-body {
-    font-family: 'Raleway', Calibri, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 12vw;
-}
-
 a {
   font-weight: bold;
   text-decoration: none;
 }
 .poem {
     font-family:Cursive;
-    font-size: 2.5vw;
-}
-.navigation li a {
-  font-family:Cursive;
-  font-size: 1.5vw;
-  font-weight:bold;
-}
-#content {
-  line-height: 1.8vw;
+    font-size: 1.8em;
 }
 

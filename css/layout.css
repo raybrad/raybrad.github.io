@@ -56,23 +56,6 @@ top:0;width:1.5em; float:left;}
 #poem3{
 top:0;width:1.5em; float:left;}
 
-.navigation {
-  position:absolute;
-  top:50%;
-  left:25%;
-}
-.navigation ul {
-  width: 100%;
-  overflow: hidden;
-}
-.navigation li {
-  display: inline;
-}
-.navigation li a {
-  float: left;
-  padding: .5em 2em;
-  outline: 0;
-}
 #enterButton{
 	display: inline;
     position: absolute;

@@ -24,21 +24,3 @@ a:active {
     color: white;
 }
 
-#navigation {
-  color: black;
-}
-
-#navigation a:link{
-  color: #445;
-}
-
-#navigation a:visited {
-  color: #345;
-}
-
-#navigation a:hover {
-  color: #babac4;
-}
-#navigation a:active {
-  color: #red;
-}

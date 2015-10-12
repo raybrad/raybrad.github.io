@@ -15,7 +15,7 @@ body {
 .custom-header {
     padding:10px; 
     font-family:Cursive;
-    font-size:1.5vw;
+    font-size:1.5em;
     color:white;
     background-color:black;
     text-align:center;
@@ -32,7 +32,7 @@ body {
 .custom-menu {
     line-height:4;
     background-color:#eeeeee;
-    width:100px;
+    width:120px;
     height:100%;
     float:left;
     padding-left:10px;
@@ -42,7 +42,7 @@ body {
     margin:0;
     text-align: left;
     font-family:Cursive;
-    font-size:1.5vw;
+    font-size:1.5em;
     font-weight:bold;
 }
 .custom-menu ul{
@@ -61,7 +61,7 @@ body {
 
 .custom-header2 {
     font-family:Cursive;
-    font-size:1.5vw;
+    font-size:1.5em;
     padding:0; 
     margin:0;
 }
@@ -80,7 +80,7 @@ body {
     margin:0;
     padding:0;
     width:100%;
-    font-size:1.0vw;
+    font-size:1.0em;
     height:60px;
     padding-bottom:10px; 
     color:white;
