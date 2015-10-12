@@ -24,6 +24,7 @@ body {
 
 
 .custom-mid-layer{
+   overflow-y:scroll;
    padding:0px;
    margin:0;
    padding-bottom:60px; 
