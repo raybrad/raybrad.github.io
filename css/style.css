@@ -842,7 +842,7 @@ cite {
 ---------------------------------------------------*/
 .hs-content {
     /* overflow-y: scroll; */
-    width:700px;
+    width:1000px;
     height: 100%;
     height: calc(100% - 23px);
     height: -moz-calc(100% - 23px);
@@ -866,6 +866,7 @@ cite {
     text-align: center;
     /* background: #605958; */
     /* color: #858EA1; */
+    color:#01BDF2;
     position: relative;
     left: -5px;
     top: 7px;
@@ -942,8 +943,8 @@ cite {
     z-index: 0;
     display: inline-block;
     overflow: hidden;
-    width: 176px;
-    height: 176px;
+    width: 300px;
+    height: 177px;
     text-align: center;
     cursor: pointer;
     margin-bottom:-2px;
