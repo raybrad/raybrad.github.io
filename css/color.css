@@ -1,0 +1,44 @@
+body {
+	color: #fff;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:link {
+  color: #445;
+}
+a:visited {
+  color: #345;
+}
+a:hover {
+  color: #babac4;
+}
+
+a:active {
+    color: red;
+}
+.poem {
+    color: black;
+}
+
+#navigation {
+  color: black;
+}
+
+#navigation a:link{
+  color: #445;
+}
+
+#navigation a:visited {
+  color: #345;
+}
+
+#navigation a:hover {
+  color: #babac4;
+}
+#navigation a:active {
+  color: #red;
+}

@@ -1,0 +1,79 @@
+/*
+body{
+	background: url(../images/water.png);
+    padding:0;
+	height: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 75%;
+	border: 1px solid black;
+    text-align: center;
+}
+*/
+body{
+	background: url(../images/water.png);
+    display: block;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+#boat {
+	display: inline;
+    position: absolute;
+    top:60%;
+    left:40%;
+    width: 50px;
+    height: 50px;
+}
+#followBoat {
+	display: inline;
+    position: absolute;
+    top:50%;
+    left:62%;
+    width: 25px;
+    height: 25px;
+    opacity:1.0;
+}
+.poem {
+    position: absolute;
+    top:20%;
+    left:30%;
+}
+#poem1{
+top:0;width:1.5em; float:left;}
+#poem2{
+top:0;width:1.5em; float:left;}
+#poem3{
+top:0;width:1.5em; float:left;}
+
+.navigation {
+  position:absolute;
+  top:50%;
+  left:25%;
+}
+.navigation ul {
+  width: 100%;
+  overflow: hidden;
+}
+.navigation li {
+  display: inline;
+}
+.navigation li a {
+  float: left;
+  padding: .5em 2em;
+  outline: 0;
+}
+#enterButton{
+	display: inline;
+    position: absolute;
+    top:30%;
+    left:60%;
+    width: 50px;
+    height: 50px;
+    opacity:0.0;
+}

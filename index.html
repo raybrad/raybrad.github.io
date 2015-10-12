@@ -2,42 +2,28 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>蚱蜢舟</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/basic.css" />
-  
-  <script type="text/javascript" src="scripts/greensock/TweenMax.min.js"></script>
-  <script type="text/javascript" src="scripts/greensock/TimelineMax.min.js"></script>
-  <script type="text/javascript" src="scripts/greensock/plugins/CSSPlugin.min.js"></script>
-  <script type="text/javascript" src="scripts/greensock/plugins/TextPlugin.min.js"></script>
-  <script type="text/javascript" src="scripts/greensock/easing/EasePack.min.js"></script>
-  <script type="text/javascript" src="scripts/global.js"></script>
-  <!--
-  <script type="text/javascript" src="scripts/global.js"></script>
-  <script type="text/javascript" src="scripts/home.js"></script>
-    <div id="words">
-        <p class="poem"> </p>
-    </div>
-  -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
+ 
+  <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.ripples.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-  <div class="animation">
-    <div class="scene">
-        <img id="water" src="images/water.png" alt="water" />
+  <div id="animation" >
+    <div id="scene" >
         <img id="boat" src="images/boat.png" alt="mini-boat" />
+        <img id="followBoat" src="images/followBoat.png" alt="follow-boat" />
     </div>
     <div class="poem">
-        <div id="poem1">只恐雙溪舴艋舟</div>
+        <div id="poem1"> 只恐雙溪舴艋舟</div>
         <div id="poem2"> 載不動</div>
         <div id="poem3"> 許多愁</div>
     </div>
-    <div class="navigation">
-    <ul>
-        <li><a href="freeMind.html"> 逍遥游</a></li>
-        <li><a href="inWorld.html"> 人间世</a></li>
-        <li><a href="travel.html"> 知北游</a></li>
-        <li><a href="life.html"> 养生主</a></li>
-    </ul>
-  </div>
-  </div>
 
+    <div id='enter' >
+        <img id="enterButton" src="images/button.png" alt="Enter" />
+    </div> 
+  </div>
 </body>
 </html>
