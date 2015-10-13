@@ -17,7 +17,7 @@ blockquote p {
 
 blockquote {
 	padding: 0px;
-	font-size: 1.2em;
+	font-size: 1.0em;
 	/*background: url(../images/quote_up.png) top left no-repeat;*/
 }
 
@@ -1961,31 +1961,37 @@ screen and (max-height: 300px) {
     padding:30px;
 }
 .cont-mid, .desc {
-    background: url(http://img.ph.126.net/Id2ElKc7bspJkRp3dpktsg==/5629519325422429583.png) repeat;
+    background: url(../images/letter/cont-mid.png) repeat;
 }
 
 .angle {
-    background: url(http://img.ph.126.net/ScRh9_yqPhDjMmrR6Dqp3A==/5629519325422429585.png) no-repeat;
+    /* background: url(http://img.ph.126.net/ScRh9_yqPhDjMmrR6Dqp3A==/5629519325422429585.png) no-repeat; */
+    background: url(../images/letter/angle.png) no-repeat;
 }
 
 .cont-top {
-    background: url(http://img.ph.126.net/GAsvwgx1PzwP-IU9SXmU5g==/5629519325422429584.png) repeat;
+    /* background: url(http://img.ph.126.net/GAsvwgx1PzwP-IU9SXmU5g==/5629519325422429584.png) repeat; */
+    background: url(../images/letter/cont-top.png) repeat;
 }
 
 .cont-bot {
-    background: url(http://img.ph.126.net/o5KlOgi92yGpB89iynYcXg==/5629519325422429579.png) no-repeat left bottom;
+    /* background: url(http://img.ph.126.net/o5KlOgi92yGpB89iynYcXg==/5629519325422429579.png) no-repeat left bottom; */
+    background: url(../images/letter/cont-bot.png) no-repeat left bottom;
 }
 
 .cont-bot-r {
-    background: url(http://img.ph.126.net/6zQ4PTAfwpT7CVsdneMZEQ==/5629519325422429581.png) no-repeat right bottom;
+    /* background: url(http://img.ph.126.net/6zQ4PTAfwpT7CVsdneMZEQ==/5629519325422429581.png) no-repeat right bottom; */
+    background: url(../images/letter/cont-bot-r.png) no-repeat right bottom;
 }
 
 .cont-bot-m {
-    background: url(http://img.ph.126.net/eXbkQwuu5VqkMxaOFSJdAg==/5629519325422429578.png) repeat-x;
+    /* background: url(http://img.ph.126.net/eXbkQwuu5VqkMxaOFSJdAg==/5629519325422429578.png) repeat-x; */
+    background: url(../images/letter/cont-bot-m.png) repeat-x;
 }
 
 .cont-bot-sr, .cont-bot-sl {
-    background: url(http://img.ph.126.net/irUQR2xuTAjTppoDsk5psQ==/5629519325422429587.png) left bottom no-repeat;
+    /* background: url(http://img.ph.126.net/irUQR2xuTAjTppoDsk5psQ==/5629519325422429587.png) left bottom no-repeat; */
+    background: url(../images/letter/cont-bot-sr.png) no-repeat left bottom;
 }
 .cont-content {
     position: relative;

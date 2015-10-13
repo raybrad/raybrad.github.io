@@ -6,7 +6,7 @@ body {
     padding:0;
     position:fixed;
     word-wrap: break-word;
-    background: url(http://img.ph.126.net/X-6LsYsSCbOI4stBpgCWrg==/5629519325422429569.png) repeat
+    background: url(../images/letter/texture1.png) repeat;
 }
 .container{
     height:100%;
@@ -17,13 +17,22 @@ body {
 .custom-header {
     padding:5px; 
     font-family:Cursive;
-    font-size:1.2em;
     color:white;
     background-color:black;
     text-align:center;
+    overflow: hidden;
     clear:both;
 }
-
+#logo{
+    float:left;
+    position: relative;
+    overflow: hidden;
+    display: inline;
+    width: 80px;
+    margin:5px auto;
+    margin-left:20px;
+    text-align:right;
+}
 
 .custom-mid-layer{
    overflow-y:scroll;
@@ -46,14 +55,14 @@ body {
     font-family:Cursive;
     font-size:1.5em;
     font-weight:bold;
-    background: url(http://img.ph.126.net/hhAUFcMZ6GKAHEcZR9Fz_A==/5629519325422429574.png) -999px repeat-x;
+    background: url(../images/letter/line.png)  -999px repeat-x;
     background-position: 0 top;
 }
 .custom-menu li{
     /* margin:0; */
     /* padding:10; */
     /* list-style:none;   */
-    background: url(http://img.ph.126.net/hhAUFcMZ6GKAHEcZR9Fz_A==/5629519325422429574.png) -999px repeat-x;
+    background: url(../images/letter/line.png)  -999px repeat-x;
     height: 60px;
     background-position: 0 bottom;
     line-height: 60px;
@@ -73,7 +82,7 @@ body {
     overflow-y:scroll;
     margin-left:20px;
     padding:16px;
-    background: url(http://img.ph.126.net/2Ibz6Sh_hIdOolmYFZGXNA==/5629519325422429570.png) repeat;
+    background: url(../images/letter/texture2.png) repeat;
     border-left: 1px solid #e3e3d7
 }
 
@@ -99,7 +108,7 @@ body {
     padding:0;
     width:100%;
     font-size:1.0em;
-    height:60px;
+    height:50px;
     padding-bottom:10px; 
     color:white;
     text-align:center;
