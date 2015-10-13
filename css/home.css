@@ -5,6 +5,8 @@ body {
     margin:0;
     padding:0;
     position:fixed;
+    word-wrap: break-word;
+    background: url(http://img.ph.126.net/X-6LsYsSCbOI4stBpgCWrg==/5629519325422429569.png) repeat
 }
 .container{
     height:100%;
@@ -13,9 +15,9 @@ body {
     margin:0 auto;
 }
 .custom-header {
-    padding:10px; 
+    padding:5px; 
     font-family:Cursive;
-    font-size:1.5em;
+    font-size:1.2em;
     color:white;
     background-color:black;
     text-align:center;
@@ -36,20 +38,33 @@ body {
     width:120px;
     height:100%;
     float:left;
-    padding-left:10px;
+    padding-left:0px;
     padding-right:10px;
     padding-top:20px;
     padding-bottom:20px;
-    margin:0;
     text-align: left;
     font-family:Cursive;
     font-size:1.5em;
     font-weight:bold;
+    background: url(http://img.ph.126.net/hhAUFcMZ6GKAHEcZR9Fz_A==/5629519325422429574.png) -999px repeat-x;
+    background-position: 0 top;
 }
-.custom-menu ul{
-    margin:0;
-    padding:10;
-    list-style:none;  
+.custom-menu li{
+    /* margin:0; */
+    /* padding:10; */
+    /* list-style:none;   */
+    background: url(http://img.ph.126.net/hhAUFcMZ6GKAHEcZR9Fz_A==/5629519325422429574.png) -999px repeat-x;
+    height: 60px;
+    background-position: 0 bottom;
+    line-height: 60px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.custom-menu  a {
+    display: block;
+    zoom: 1;
+    font-size: 1em;
 }
 
 .custom-main {
@@ -58,6 +73,8 @@ body {
     overflow-y:scroll;
     margin-left:20px;
     padding:16px;
+    background: url(http://img.ph.126.net/2Ibz6Sh_hIdOolmYFZGXNA==/5629519325422429570.png) repeat;
+    border-left: 1px solid #e3e3d7
 }
 
 .custom-header2 {

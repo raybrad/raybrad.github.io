@@ -882,6 +882,7 @@ cite {
 }
 .hs-inner {
     padding: 10px 20px 10px 20px;
+    background: url(http://img.ph.126.net/2Ibz6Sh_hIdOolmYFZGXNA==/5629519325422429570.png) repeat
 }
 
 .hs-inner p {
@@ -1954,5 +1955,91 @@ screen and (max-height: 300px) {
     }
 }
 
+/* notebook style  */
+.boxwrap {
+    margin: 0 0 30px;
+    padding:30px;
+}
+.cont-mid, .desc {
+    background: url(http://img.ph.126.net/Id2ElKc7bspJkRp3dpktsg==/5629519325422429583.png) repeat;
+}
 
+.angle {
+    background: url(http://img.ph.126.net/ScRh9_yqPhDjMmrR6Dqp3A==/5629519325422429585.png) no-repeat;
+}
 
+.cont-top {
+    background: url(http://img.ph.126.net/GAsvwgx1PzwP-IU9SXmU5g==/5629519325422429584.png) repeat;
+}
+
+.cont-bot {
+    background: url(http://img.ph.126.net/o5KlOgi92yGpB89iynYcXg==/5629519325422429579.png) no-repeat left bottom;
+}
+
+.cont-bot-r {
+    background: url(http://img.ph.126.net/6zQ4PTAfwpT7CVsdneMZEQ==/5629519325422429581.png) no-repeat right bottom;
+}
+
+.cont-bot-m {
+    background: url(http://img.ph.126.net/eXbkQwuu5VqkMxaOFSJdAg==/5629519325422429578.png) repeat-x;
+}
+
+.cont-bot-sr, .cont-bot-sl {
+    background: url(http://img.ph.126.net/irUQR2xuTAjTppoDsk5psQ==/5629519325422429587.png) left bottom no-repeat;
+}
+.cont-content {
+    position: relative;
+    border: 1px solid #f0eaca;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+}
+.angle {
+    position: absolute;
+    left: -12px;
+    top: 30px;
+    width: 12px;
+    height: 24px;
+}
+
+.cont {
+    margin: 0 30px;
+    padding-left: 29px;
+    border-left: 1px solid #f3dac6;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.cont-top {
+    text-align: center;
+}
+.cont-mid .cont {
+    padding: 26px 29px 27px;
+}
+.cont-bot {
+    padding-left: 9px;
+}
+
+.cont-bot-r {
+    padding-right: 9px;
+}
+
+.cont-bot-m {
+    position: relative;
+    height: 9px;
+}
+
+.cont-bot-sl, .cont-bot-sr {
+    position: absolute;
+    bottom: -5px;
+    right: 17px;
+    width: 114px;
+    height: 8px;
+}
+
+.cont-bot-sl {
+    left: 10px;
+    right: auto;
+}
