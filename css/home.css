@@ -82,6 +82,7 @@ body {
     overflow-y:scroll;
     margin-left:20px;
     padding:16px;
+    display:block;
     background: url(../images/letter/texture2.png) repeat;
     border-left: 1px solid #e3e3d7
 }

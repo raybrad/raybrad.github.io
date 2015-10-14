@@ -1,5 +1,5 @@
 $(document).ready(function() {
-$('.custom-main>div').hide();
+$('.custom-main>div').not(":first-child").hide();
 $('.custom-menu a').click(function(){
 /*
      $div = $('.parent>div').eq($(this).index('.custom-menu a'));  // get the relevant div
