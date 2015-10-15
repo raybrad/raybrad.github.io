@@ -4,11 +4,13 @@ body {
     height:100%;
     margin:0;
     padding:0;
-    position:fixed;
+    /* position:fixed; */
+    position:static;
     word-wrap: break-word;
     background: url(../images/letter/texture1.png) repeat;
 }
 .container{
+    /* overflow-y:scroll; */
     height:100%;
     min-height:100%;
     position:relative;
@@ -79,12 +81,13 @@ body {
 .custom-main {
     height:100%;
     min-height:100%;
-    overflow-y:scroll;
+   /* overflow-y:scroll; */
+    overflow-y:auto;
     margin-left:20px;
     padding:16px;
     display:block;
     background: url(../images/letter/texture2.png) repeat;
-    border-left: 1px solid #e3e3d7
+    border-left: 1px solid #e3e3d7;
 }
 .custom-header2 {
     font-family:Cursive;
