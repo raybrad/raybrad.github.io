@@ -14,15 +14,25 @@ body{
     text-align: center;
 }
 */
+* { margin: 0; padding: 0; }
+html {
+	height: 100%;
+}
 body{
-	background: url(../images/willowLake.png);
-    display: block;
-    background-position: center center;
-    background-repeat: no-repeat;
+	background: url(../images/willowLake.png) center center no-repeat;
     background-size: cover;
+    display: block;
     margin:0;
     padding:0;
+    height:100%;
+    width:100%;
     overflow:hidden;
+}
+body:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
 }
 
 #boat {

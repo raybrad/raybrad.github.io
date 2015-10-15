@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    "use strict";
     // water ripples
 	try {
 		$('body').ripples({
