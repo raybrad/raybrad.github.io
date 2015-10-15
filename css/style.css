@@ -882,7 +882,7 @@ cite {
 }
 .hs-inner {
     padding: 10px 20px 10px 20px;
-    background: url(http://img.ph.126.net/2Ibz6Sh_hIdOolmYFZGXNA==/5629519325422429570.png) repeat
+    background: url(../images/letter/texture3.png) repeat;
 }
 
 .hs-inner p {
@@ -1965,32 +1965,26 @@ screen and (max-height: 300px) {
 }
 
 .angle {
-    /* background: url(http://img.ph.126.net/ScRh9_yqPhDjMmrR6Dqp3A==/5629519325422429585.png) no-repeat; */
     background: url(../images/letter/angle.png) no-repeat;
 }
 
 .cont-top {
-    /* background: url(http://img.ph.126.net/GAsvwgx1PzwP-IU9SXmU5g==/5629519325422429584.png) repeat; */
     background: url(../images/letter/cont-top.png) repeat;
 }
 
 .cont-bot {
-    /* background: url(http://img.ph.126.net/o5KlOgi92yGpB89iynYcXg==/5629519325422429579.png) no-repeat left bottom; */
     background: url(../images/letter/cont-bot.png) no-repeat left bottom;
 }
 
 .cont-bot-r {
-    /* background: url(http://img.ph.126.net/6zQ4PTAfwpT7CVsdneMZEQ==/5629519325422429581.png) no-repeat right bottom; */
     background: url(../images/letter/cont-bot-r.png) no-repeat right bottom;
 }
 
 .cont-bot-m {
-    /* background: url(http://img.ph.126.net/eXbkQwuu5VqkMxaOFSJdAg==/5629519325422429578.png) repeat-x; */
     background: url(../images/letter/cont-bot-m.png) repeat-x;
 }
 
 .cont-bot-sr, .cont-bot-sl {
-    /* background: url(http://img.ph.126.net/irUQR2xuTAjTppoDsk5psQ==/5629519325422429587.png) left bottom no-repeat; */
     background: url(../images/letter/cont-bot-sr.png) no-repeat left bottom;
 }
 .cont-content {
@@ -2049,3 +2043,72 @@ screen and (max-height: 300px) {
     left: 10px;
     right: auto;
 }
+
+.inWolrd-section .tab-pane {
+    padding: 10px;
+    background: rgba(248, 249, 251, 0.6);
+    border: 1px solid #DBDBE0;
+    margin-left: 10px;
+}
+
+.inWolrd-section .tab-pane h3 {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 0.9em;
+    color: #606777;
+    font-family: Montserrat;
+}
+
+.inWolrd-section .tab-pane h4 {
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-size: 10px;
+}
+
+.inWolrd-section .tab-pane .hobbie-icon {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.inWolrd-section .tab-pane .hobbie-description {}
+
+.inWolrd-section .tab-pane .hobbie-wrapper p {
+    margin-top: 6px;
+}
+
+.inWolrd-section .tab-pane .facts-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inWolrd-section .tab-pane .facts-wrapper i {
+    font-size: 60px;
+}
+
+.inWolrd-section .tab-pane .facts-wrapper .facts-number {
+    font-size: 30px;
+}
+/* .tabs-vertical { */
+/*     position: relative; */
+/* } */
+/*  */
+/* .tabs-vertical > .nav-tabs { */
+/*     position: absolute; */
+/*     display: block; */
+/*     height: 42px; */
+/*     margin: 0; */
+/*     white-space: nowrap; */
+/*     border: 0 none; */
+/*     -moz-transform-origin: 0 0; */
+/*     -ms-transform-origin: 0 0; */
+/*     -webkit-transform-origin: 0 0; */
+/*     transform-origin: 0 0; */
+/*     -moz-transform: rotate(90deg); */
+/*     -ms-transform: rotate(90deg); */
+/*     -webkit-transform: rotate(90deg); */
+/*     transform: rotate(90deg); */
+/*     -moz-box-sizing: border-box; */
+/*     -webkit-box-sizing: border-box; */
+/*     box-sizing: border-box; */
+/* } */

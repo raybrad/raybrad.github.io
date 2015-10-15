@@ -35,7 +35,7 @@ body {
 }
 
 .custom-mid-layer{
-   overflow-y:scroll;
+   /* overflow-y:scroll; */
    padding:0px;
    margin:0;
    padding-bottom:60px; 
@@ -86,7 +86,6 @@ body {
     background: url(../images/letter/texture2.png) repeat;
     border-left: 1px solid #e3e3d7
 }
-
 .custom-header2 {
     font-family:Cursive;
     font-size:1.5em;
