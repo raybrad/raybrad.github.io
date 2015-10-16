@@ -1,0 +1,75 @@
+/*
+body{
+	background: url(../images/water.png);
+    padding:0;
+	height: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 75%;
+	border: 1px solid black;
+    text-align: center;
+}
+*/
+* { margin: 0; padding: 0; }
+html {
+	height: 100%;
+}
+body{
+	background: url(../images/willowLake.png) center center no-repeat;
+    background-size: cover;
+    display: block;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+body:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+#boat {
+	display: inline;
+    position: absolute;
+    top:60%;
+    left:40%;
+    width: 50px;
+    height: 50px;
+}
+#followBoat {
+	display: inline;
+    position: absolute;
+    top:50%;
+    left:62%;
+    width: 25px;
+    height: 25px;
+    opacity:1.0;
+}
+.poem {
+    position: absolute;
+    top:5%;
+    left:40%;
+}
+#poem1{
+top:0;width:1.5em; float:left;}
+#poem2{
+top:0;width:1.5em; float:left;}
+#poem3{
+top:0;width:1.5em; float:left;}
+
+#enterButton{
+	display: inline;
+    position: absolute;
+    top:10%;
+    left:50%;
+    width: 50px;
+    height: 50px;
+    opacity:0.0;
+}

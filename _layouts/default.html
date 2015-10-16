@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html lang="en">
+  {% include head.html %}
+<body>
+<div class="custom-container">
+  {% include header.html %}
+  <div class="custom-mid-layer">
+     {% include menu.html %}
+     <div class="custom-main" >
+        <div class="custom-content freeMind-section" id="freeMind">
+             {{ content }}
+        </div>
+             {% include inWorld.html %}
+             {% include travel.html %}
+             {% include life.html %}
+     </div>
+  </div>
+  {% include footer.html %}
+</div>
+  {% include head-js.html %}
+</body>
+</html>

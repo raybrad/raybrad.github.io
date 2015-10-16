@@ -1,5 +1,4 @@
 $(document).ready(function() {
-"use strict";
 $('.custom-main>div').not(":first-child").hide();
 $('.custom-menu a').click(function(){
 /*
