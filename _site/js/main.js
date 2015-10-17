@@ -65,7 +65,7 @@ $(document).ready(function() {
     $("#enterButton").animate({opacity: 1.0,top: "50%",left:"50%"}, 5000);
     $("#enterButton").click(function() {
 		$('body').ripples('destroy');
-        window.location = "home.html";
+        window.location = "freeMind.html";
     });
 
 });
