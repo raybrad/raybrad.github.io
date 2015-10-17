@@ -2089,6 +2089,17 @@ screen and (max-height: 300px) {
 .inWolrd-section .tab-pane .facts-wrapper .facts-number {
     font-size: 30px;
 }
+pre {
+    background-color: #333333;
+    padding: 5px;
+    color: #FFF;
+    overflow-x: auto;
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: 12px;
+}
+.cont.highlight {
+	background-color: #333333;
+}
 /* .tabs-vertical { */
 /*     position: relative; */
 /* } */

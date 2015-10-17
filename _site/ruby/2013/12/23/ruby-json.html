@@ -3,8 +3,8 @@
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>WillowLake</title>
-  <meta name="description" content="Just another personal website.">
+  <title>Parsing JSON with Ruby</title>
+  <meta name="description" content="Parsing JSON with Ruby is actually extremely easy. All you have to do is have the json gem installed (gem install json) and call the JSON.parse method on the...">
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="/css/animate.css" />
   <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
@@ -53,131 +53,71 @@
             </ul>
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane fade in active" id="notes">
-                    
-<div class="boxwrap article">
+                    <div class="boxwrap article">
       <div class="cont-content">
          <div class="angle"></div>
-             <div class="cont-top">
-                 <div class="cont">
-                         <h2 class="data"><a href="">2015.10.12</a></h2>
-                 </div>
-              </div>
-              <div class="cont-mid">
-                 <div class="cont">
-                      <div class="post-header">
-                        <h1 class="post-title"></h1>
-                        <p class="post-meta"></p>
-                      </div>
-                    <div class="text">
-		                <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-                    </div>
-                </div>             
-            </div>
-        </div>
-        <div class="cont-bot">
-             <div class="cont-bot-r">
-                 <div class="cont-bot-m">
-                     <div class="cont-bot-sl"></div>
-                     <div class="cont-bot-sr"></div>
-                 </div>
+         <div class="cont-top">
+             <div class="cont">
+                     <h2 class="data"><a href="">2015.10.12</a></h2>
              </div>
-        </div>
-</div>
+          </div>
+          <div class="cont-mid">
+             <div class="cont">
+                  <div class="post-header">
+                    <h1 class="post-title">Parsing JSON with Ruby</h1>
+                    <p class="post-meta">Dec 23, 2013</p>
+                  </div>
+                  <div class="text">
+                    <p>Parsing JSON with Ruby is actually extremely easy. All you have to do is have the json gem installed (<code>gem install json</code>) and call the <code>JSON.parse</code> method on the JSON data to convert it to ruby hashes. If you look at this small program here, you can see how I have implemented parsing JSON in Ruby.</p>
 
-<div class="boxwrap article">
-      <div class="cont-content">
-         <div class="angle"></div>
-             <div class="cont-top">
-                 <div class="cont">
-                         <h2 class="data"><a href="">2015.10.12</a></h2>
-                 </div>
-              </div>
-              <div class="cont-mid">
-                 <div class="cont">
-                      <div class="post-header">
-                        <h1 class="post-title"></h1>
-                        <p class="post-meta"></p>
-                      </div>
-                    <div class="text">
-		                <p>This is a test.</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#!/usr/bin/env ruby</span>
 
-                    </div>
-                </div>             
-            </div>
-        </div>
-        <div class="cont-bot">
-             <div class="cont-bot-r">
-                 <div class="cont-bot-m">
-                     <div class="cont-bot-sl"></div>
-                     <div class="cont-bot-sr"></div>
-                 </div>
+<span class="nb">require</span> <span class="s1">&#39;json&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;net/http&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;libnotify&#39;</span>
+
+<span class="k">def</span> <span class="nf">parsejson</span>
+    <span class="n">file</span> <span class="o">=</span> <span class="s2">&quot;http://api.openweathermap.org/data/2.5/find?q=London&amp;mode=json&quot;</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="no">Net</span><span class="o">::</span><span class="no">HTTP</span><span class="o">.</span><span class="n">get_response</span><span class="p">(</span><span class="no">URI</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">file</span><span class="p">))</span>
+    <span class="n">weatherjson</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">body</span>
+    <span class="n">actual</span> <span class="o">=</span> <span class="no">JSON</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">weatherjson</span><span class="p">)</span>
+
+    <span class="c1"># check for errors</span>
+    <span class="k">if</span> <span class="n">actual</span><span class="o">.</span><span class="n">has_key?</span> <span class="s1">&#39;Error&#39;</span>
+        <span class="k">raise</span> <span class="s2">&quot;error with the url&quot;</span>
+    <span class="k">end</span>
+
+    <span class="n">results</span> <span class="o">=</span> <span class="o">[]</span>
+
+    <span class="n">actual</span><span class="o">[</span><span class="s2">&quot;list&quot;</span><span class="o">].</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">listitem</span><span class="o">|</span>
+        <span class="n">weather</span> <span class="o">=</span> <span class="n">listitem</span><span class="o">[</span><span class="s2">&quot;weather&quot;</span><span class="o">]</span>
+        <span class="n">weather</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">weath</span><span class="o">|</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">weath</span><span class="o">[</span><span class="s2">&quot;description&quot;</span><span class="o">]</span><span class="p">)</span>
+        <span class="k">end</span>
+        <span class="n">main</span> <span class="o">=</span> <span class="n">listitem</span><span class="o">[</span><span class="s2">&quot;main&quot;</span><span class="o">]</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">main</span><span class="o">[</span><span class="s2">&quot;temp&quot;</span><span class="o">]</span> <span class="o">-</span> <span class="mi">273</span><span class="o">.</span><span class="mi">15</span>
+        <span class="n">results</span><span class="o">.</span><span class="n">push</span> <span class="p">(</span><span class="s2">&quot;%.2f&quot;</span> <span class="o">%</span> <span class="n">temp</span><span class="p">)</span>
+    <span class="k">end</span>
+
+    <span class="k">return</span> <span class="n">results</span>
+<span class="k">end</span></code></pre></div>
+
+
+
+
+                  </div>
+            </div>             
+          </div>
+      </div>
+      <div class="cont-bot">
+         <div class="cont-bot-r">
+             <div class="cont-bot-m">
+                 <div class="cont-bot-sl"></div>
+                 <div class="cont-bot-sr"></div>
              </div>
-        </div>
+         </div>
+     </div>
 </div>
-
-<div class="boxwrap article">
-      <div class="cont-content">
-         <div class="angle"></div>
-             <div class="cont-top">
-                 <div class="cont">
-                         <h2 class="data"><a href="">2015.10.12</a></h2>
-                 </div>
-              </div>
-              <div class="cont-mid">
-                 <div class="cont">
-                      <div class="post-header">
-                        <h1 class="post-title"></h1>
-                        <p class="post-meta"></p>
-                      </div>
-                    <div class="text">
-		                <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-                    </div>
-                </div>             
-            </div>
-        </div>
-        <div class="cont-bot">
-             <div class="cont-bot-r">
-                 <div class="cont-bot-m">
-                     <div class="cont-bot-sl"></div>
-                     <div class="cont-bot-sr"></div>
-                 </div>
-             </div>
-        </div>
-</div>
-
-<div class="boxwrap article">
-      <div class="cont-content">
-         <div class="angle"></div>
-             <div class="cont-top">
-                 <div class="cont">
-                         <h2 class="data"><a href="">2015.10.12</a></h2>
-                 </div>
-              </div>
-              <div class="cont-mid">
-                 <div class="cont">
-                      <div class="post-header">
-                        <h1 class="post-title"></h1>
-                        <p class="post-meta"></p>
-                      </div>
-                    <div class="text">
-		                <p>Parsing JSON with Ruby is actually extremely easy. All you have to do is have the json gem installed (<code>gem install json</code>) and call the <code>JSON.parse</code> method on the JSON data to convert it to ruby hashes. If you look at this small program here, you can see how I have implemented parsing JSON in Ruby.</p>
-
-                    </div>
-                </div>             
-            </div>
-        </div>
-        <div class="cont-bot">
-             <div class="cont-bot-r">
-                 <div class="cont-bot-m">
-                     <div class="cont-bot-sl"></div>
-                     <div class="cont-bot-sr"></div>
-                 </div>
-             </div>
-        </div>
-</div>
-
 
                 </div>
                 <div class="tab-pane fade" id="archive">
