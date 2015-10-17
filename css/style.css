@@ -882,7 +882,7 @@ cite {
 }
 .hs-inner {
     padding: 10px 20px 10px 20px;
-    background: url(../images/letter/texture3.png) repeat;
+    background: url('/images/letter/texture3.png') repeat;
 }
 
 .hs-inner p {
@@ -1961,31 +1961,31 @@ screen and (max-height: 300px) {
     padding:30px;
 }
 .cont-mid, .desc {
-    background: url(../images/letter/cont-mid.png) repeat;
+    background: url('/images/letter/cont-mid.png') repeat;
 }
 
 .angle {
-    background: url(../images/letter/angle.png) no-repeat;
+    background: url('/images/letter/angle.png') no-repeat;
 }
 
 .cont-top {
-    background: url(../images/letter/cont-top.png) repeat;
+    background: url('/images/letter/cont-top.png') repeat;
 }
 
 .cont-bot {
-    background: url(../images/letter/cont-bot.png) no-repeat left bottom;
+    background: url('/images/letter/cont-bot.png') no-repeat left bottom;
 }
 
 .cont-bot-r {
-    background: url(../images/letter/cont-bot-r.png) no-repeat right bottom;
+    background: url('/images/letter/cont-bot-r.png') no-repeat right bottom;
 }
 
 .cont-bot-m {
-    background: url(../images/letter/cont-bot-m.png) repeat-x;
+    background: url('/images/letter/cont-bot-m.png') repeat-x;
 }
 
 .cont-bot-sr, .cont-bot-sl {
-    background: url(../images/letter/cont-bot-sr.png) no-repeat left bottom;
+    background: url('/images/letter/cont-bot-sr.png') no-repeat left bottom;
 }
 .cont-content {
     position: relative;
