@@ -64,8 +64,8 @@ $(document).ready(function() {
     $("#followBoat").css({left:xp +'px', top:yp +'px'});  
     }, 30);
    */ 
-    // $("#enterButton").animate({opacity: 1.0,top: "50%",left:"50%"}, 5000);
-   TweenMax.to($("#enterButton"), 5, {top:"50%",left:"50%",opacity:1.0});
+    $("#enterButton").animate({opacity: 1.0,top: "50%",left:"50%"}, 5000);
+   // TweenMax.to($("#enterButton"), 5, {top:"50%",left:"50%",opacity:1.0});
 
     $("#enterButton").click(function() {
 		$('body').ripples('destroy');

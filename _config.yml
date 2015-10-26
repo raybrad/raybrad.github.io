@@ -3,8 +3,8 @@ title: WillowLake
 motto: Carpe Diem 
 email: rayleighbrad@gmail.com
 description: Just another personal website.
-baseurl: "http://raybrad.github.io" # the subpath of your site, e.g. /blog/
-url: "http://raybrad.github.io" # the base hostname & protocol for your site
+# baseurl: "http://raybrad.github.io" # the subpath of your site, e.g. /blog/
+# url: "http://raybrad.github.io" # the base hostname & protocol for your site
 twitter_username: raybrad
 github_username:  raybrad
 
