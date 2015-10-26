@@ -2,5 +2,14 @@
 layout: page
 title: 养生主
 ---
+
 <div class="life-section"  id="life">
+  <h2>Albums</h2>
+  {% for album in site.music limit:3 %}
+    <li>
+      <img src="{{ album.thumbnail-path }}" alt="{{ album.title }}"/>
+      <a href="{{ album.url }}">{{ album.title }}</a>
+      <p>{{ album.short-description }}</p>
+    </li>
+  {% endfor %}
 </div>

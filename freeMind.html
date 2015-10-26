@@ -3,35 +3,68 @@ layout: page
 title: 逍遥游
 ---
 <div class="freeMind-section" id="freeMind">
-{% for post in site.posts %}
-<div class="boxwrap article">
-      <div class="cont-content">
-         <div class="angle"></div>
-             <div class="cont-top">
-                 <div class="cont">
-                         <h2 class="data"><a href="{{ post.url | prepend: site.baseurl }}">{{ page.date | date: "%b %-d, %Y" }}</a></h2>
-                 </div>
-              </div>
-              <div class="cont-mid">
-                 <div class="cont">
-                      <div class="post-header">
-                        <h1 class="post-title">{{ post.title }}</h1>
-                        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-                      </div>
-                    <div class="text">
-		                {{ post.excerpt }}
+  <div class="tabbable  tabs-left">
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active">
+            <a href="#notes" data-toggle="tab">Notes</a>
+        </li>
+        <li>
+            <a href="#archive" data-toggle="tab">Archive</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="notes">
+            {% for post in site.posts %}
+            <div class="boxwrap article">
+                  <div class="cont-content">
+                     <div class="angle"></div>
+                         <div class="cont-top">
+                             <div class="cont">
+                                     <h2 class="data"><a href="{{ post.url | prepend: site.baseurl }}">{{ page.date | date: "%b %-d, %Y" }}</a></h2>
+                             </div>
+                          </div>
+                          <div class="cont-mid">
+                             <div class="cont">
+                                  <div class="post-header">
+                                    <h1 class="post-title">{{ post.title }}</h1>
+                                    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+                                  </div>
+                                <div class="text">
+            		                {{ post.excerpt }}
+                                </div>
+                            </div>             
+                        </div>
                     </div>
-                </div>             
+                    <div class="cont-bot">
+                         <div class="cont-bot-r">
+                             <div class="cont-bot-m">
+                                 <div class="cont-bot-sl"></div>
+                                 <div class="cont-bot-sr"></div>
+                             </div>
+                         </div>
+                    </div>
             </div>
+            {% endfor %}
         </div>
-        <div class="cont-bot">
-             <div class="cont-bot-r">
-                 <div class="cont-bot-m">
-                     <div class="cont-bot-sl"></div>
-                     <div class="cont-bot-sr"></div>
-                 </div>
-             </div>
+        <div class="tab-pane fade" id="archive">
+            {%for post in site.posts %}
+                {% unless post.next %}
+                <h2>{{ post.date | date: '%Y' }}</h2>
+                <ul>
+                {% else %}
+                    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                    {% if year != nyear %}
+               </ul>
+                        <h1>{{ post.date | date: '%Y' }}</h1>
+                <ul>
+                    {% endif %}
+                {% endunless %}
+                <li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+                </ul>
         </div>
-</div>
-{% endfor %}
+
+      </div>   <!--tab-content-->
+  </div>      <!--tabbable-->
 </div>

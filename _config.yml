@@ -10,6 +10,5 @@ github_username:  raybrad
 
 # Build settings
 markdown: rdiscount
-#collections
-# collections:
-#   music
+collections:
+    - music
