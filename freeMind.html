@@ -20,14 +20,14 @@ title: 逍遥游
                      <div class="angle"></div>
                          <div class="cont-top">
                              <div class="cont">
-                                     <h2 class="data"><a href="{{ post.url | prepend: site.baseurl }}">{{ page.date | date: "%b %-d, %Y" }}</a></h2>
+                                     <h2 class="data"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a></h2>
                              </div>
                           </div>
                           <div class="cont-mid">
                              <div class="cont">
                                   <div class="post-header">
                                       <h1 class="post-title"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h1>
-                                    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+                                    <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
                                   </div>
                                 <div class="text">
             		                {{ post.excerpt }}
