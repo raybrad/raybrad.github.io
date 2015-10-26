@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    
+    $("#poem1").textillate({in:{effect:'rotateInDownLeft',sync: false},out:{effect:'rotateOutUpRight'},initialDelay: 0,minDisplayTime:1000});
+    $("#poem2").textillate({in:{effect:'rotateInDownLeft',sync: false},out:{effect:'rotateOutUpRight'},initialDelay: 500,minDisplayTime:1000});
+    $("#poem3").textillate({in:{effect:'rotateInDownLeft',sync: false},out:{effect:'rotateOutUpRight'},initialDelay: 1500,minDisplayTime:1000});
+  
     // water ripples
 	try {
 		$('body').ripples({
@@ -22,9 +27,6 @@ $(document).ready(function() {
 		$el.ripples('drop', x, y, dropRadius, strength);
 	}, 300);
 
-    $("#poem1").textillate({in:{effect:'rotateInDownLeft',sync: false},out:{effect:'rotateOutUpRight'},initialDelay: 0,minDisplayTime:1000});
-    $("#poem2").textillate({in:{effect:'rotateInDownLeft',sync: false},out:{effect:'rotateOutUpRight'},initialDelay: 500,minDisplayTime:1000});
-    $("#poem3").textillate({in:{effect:'rotateInDownLeft',sync: false},out:{effect:'rotateOutUpRight'},initialDelay: 1500,minDisplayTime:1000});
     //boat traveling ^_^
     //could be replaced by jquery,need some technic
    // TweenMax.to($("#boat"), 3, {top:"50%",left:"60%",scale:0.5,opacity:0.0});
@@ -62,7 +64,9 @@ $(document).ready(function() {
     $("#followBoat").css({left:xp +'px', top:yp +'px'});  
     }, 30);
    */ 
-    $("#enterButton").animate({opacity: 1.0,top: "50%",left:"50%"}, 5000);
+    // $("#enterButton").animate({opacity: 1.0,top: "50%",left:"50%"}, 5000);
+   TweenMax.to($("#enterButton"), 5, {top:"50%",left:"50%",opacity:1.0});
+
     $("#enterButton").click(function() {
 		$('body').ripples('destroy');
         window.location = "travel.html";
