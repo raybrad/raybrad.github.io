@@ -2100,6 +2100,10 @@ pre {
 .cont.highlight {
 	background-color: #333333;
 }
+.text{
+    font-size: 0.8em;
+    font-family: Montserrat;
+}
 /* .tabs-vertical { */
 /*     position: relative; */
 /* } */
