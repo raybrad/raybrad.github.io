@@ -69,7 +69,7 @@ $(document).ready(function() {
 
     $("#enterButton").click(function() {
 		$('body').ripples('destroy');
-        window.location = "travel.html";
+        window.location = "freeMind.html";
     });
 
 });
