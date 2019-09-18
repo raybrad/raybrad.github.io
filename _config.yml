@@ -9,6 +9,5 @@ twitter_username: raybrad
 github_username:  raybrad
 
 # Build settings
-markdown: rdiscount
 collections:
     - music
